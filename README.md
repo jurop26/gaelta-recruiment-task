@@ -1,7 +1,7 @@
 Zadanie 1.
 
     1. V admine na Shoptete sa to dá natívne nastaviť v záložke Nastavenia -> Produkty -> Parametre a príznaky -> Príznaky,
-        sa dá vytvoriť príznak kde sa nastaví počet dní koľko od vztvorenia sa má flag zobrazovať
+        sa dá vytvoriť príznak kde sa nastaví počet dní koľko od vytvorenia sa má flag zobrazovať
 
     2. script súbor zadanie1-2.js môžeme nahrať na ftp a v záložke admin -> Vzhľad a Obsah → Editor → HTML kód -> zahlavie: 
         <script src="https://cdn.myshoptet.com/usr/demo-partner.myshoptet.com/user/documents/scripts/zadanie1-2.js?v1.0" type="text/javascript" defer></script> alebo priamo kód vložime do script tagov
@@ -18,7 +18,7 @@ Zadanie 1.
 
 Zadanie 2.
 
-    1.Postup napojenia: 
+    1. Postup napojenia: 
         - najprv by som vytvoril webhook cez napr. postman cez api: https://api.myshoptet.com/api/webhooks,
             body: JSON.stringify({
                 data: [
@@ -31,7 +31,7 @@ Zadanie 2.
         - vytvoril by som endpoint "/shoptet-webhook", kde by som na zaklade event "order:create" z eventInstance dostal číslo objednávky
         - cez Shoptet Api by som načítal order data a poslal vytvoril riadok v google sheet
 
-    2. Poslane data: 
+    2. Poslané dáta: 
                 - cislo obj
                 - meno
                 - email
@@ -42,7 +42,9 @@ Zadanie 2.
                 - adressa (mena, ulica, mesto......)
                 - poznamka
 
-    3. endpoint kod zadanie2.js
+    3. Vlastný endpoint v NodeJs
+
+    4. endpoint kod zadanie2.js
 
 Zadanie 3.
 
@@ -55,7 +57,7 @@ Zadanie 3.
 
 Zadanie 4.
 
-    1. Musím vyexportovať produkty, objednávky, zákazníkov, vyriešit napojenie dopravcov a importovat do Shopify
+    1. Vyexportoval produkty, objednávky, zákazníkov, vyriešit napojenie dopravcov a importovat do Shopify
     2. 	- Veľkosť obrázkov produktov a bannerov
 	    - Rýchlosť načítania skriptov a CSS 
 	    - Server response time
