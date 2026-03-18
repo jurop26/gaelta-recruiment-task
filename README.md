@@ -1,4 +1,5 @@
 Zadanie 1.
+
     1. V admine na Shoptete sa to dá natívne nastaviť v záložke Nastavenia -> Produkty -> Parametre a príznaky -> Príznaky,
         sa dá vztvoriť príznak kde sa nastaví počet dní koľko od vztvorenia sa má flag zobrazovať
     2. script súbor zadanie1-2.js môžeme dať na ftp 
@@ -15,6 +16,7 @@ Zadanie 1.
         </style>
 
 Zadanie 2.
+
     1.Postup napojenia: 
         - najprv by som vytvoril webhook cez napr. postman cez api: https://api.myshoptet.com/api/webhooks,
             body: JSON.stringify({
@@ -40,6 +42,7 @@ Zadanie 2.
     3. endpoint kod zadanie2.js
 
 Zadanie 3.
+
     Upraveny kod je v subore zadanie3.js
 
     - e.PreventDefault => e.PreventDefault() // chybali zatvorky
@@ -48,6 +51,7 @@ Zadanie 3.
     - headers: {"Content-type: "application/json"} // chyba headers kedze body je json
 
 Zadanie 4.
+
     1. Musím vyexportovať produkty, objednávky, zákazníkov, vyriešit napojenie dopravcov a importovat do Shopify
     2. 	- Veľkosť obrázkov produktov a bannerov
 	    - Rýchlosť načítania skriptov a CSS 
@@ -68,6 +72,7 @@ Zadanie 4.
     7. Na shoptete je možné predávať na viacerých krajinách v jednom admine iba tak, že je možné iba prepnúť jazyk. Nedá sa nastaviť ani rôzna cena, tá sa iba prepočítava podľa aktuálneho kurzu. Ak chce klient 3 FE a 1 admin, možnosťou je vytvoriť 3 samostatné shoptety a spravovať v ERP systéme napr. ODOO alebo vlastné ERP riešenie.
 
 Zadanie 5.
+
     1. Wordpress: nepracoval som s wordpress
     2. Shoptet: 
         - v košiku by som vložil do constanty všetky ceny v zľave: 
