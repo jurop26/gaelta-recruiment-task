@@ -1,10 +1,11 @@
 Zadanie 1.
 
     1. V admine na Shoptete sa to dá natívne nastaviť v záložke Nastavenia -> Produkty -> Parametre a príznaky -> Príznaky,
-        sa dá vztvoriť príznak kde sa nastaví počet dní koľko od vztvorenia sa má flag zobrazovať
-    2. script súbor zadanie1-2.js môžeme dať na ftp 
-        admin -> Vzhľad a Obsah → Editor → HTML kód -> zahlavie: 
+        sa dá vytvoriť príznak kde sa nastaví počet dní koľko od vztvorenia sa má flag zobrazovať
+
+    2. script súbor zadanie1-2.js môžeme nahrať na ftp a v záložke admin -> Vzhľad a Obsah → Editor → HTML kód -> zahlavie: 
         <script src="https://cdn.myshoptet.com/usr/demo-partner.myshoptet.com/user/documents/scripts/zadanie1-2.js?v1.0" type="text/javascript" defer></script> alebo priamo kód vložime do script tagov
+
     3. Nastavime css admin -> Vzhľad a Obsah → Editor → HTML kód -> zahlavie:
         <style>
             .type-category .product .p-bottom.single-button {
@@ -27,8 +28,9 @@ Zadanie 2.
                     }
                 ]
             })
-        - vytvoril by som endpoint "/shoptet-webhook", kde by som na zaklade event resolvol podla eventInstance, co je pri evente "order:create" cislo objednavky
-        - cez Shoptet Api by som nacital order data a poslal vytvoril riadok v google sheet 
+        - vytvoril by som endpoint "/shoptet-webhook", kde by som na zaklade event "order:create" z eventInstance dostal číslo objednávky
+        - cez Shoptet Api by som načítal order data a poslal vytvoril riadok v google sheet
+
     2. Poslane data: 
                 - cislo obj
                 - meno
@@ -39,11 +41,12 @@ Zadanie 2.
                 - shippping metoda
                 - adressa (mena, ulica, mesto......)
                 - poznamka
+
     3. endpoint kod zadanie2.js
 
 Zadanie 3.
 
-    Upraveny kod je v subore zadanie3.js
+    Upravený kód je v súbore zadanie3.js
 
     - e.PreventDefault => e.PreventDefault() // chybali zatvorky
     - .val() => .value  // val() je jQuery
@@ -68,8 +71,8 @@ Zadanie 4.
             func....
         })
     6. Použil by som API endpoint /api/eshop pretože všetky informácie sú na jednom mieste cez jeden call: 
-    https://api.myshoptet.com/api/eshop?include=orderStatuses,paymentMethods,countries
-    7. Na shoptete je možné predávať na viacerých krajinách v jednom admine iba tak, že je možné iba prepnúť jazyk. Nedá sa nastaviť ani rôzna cena, tá sa iba prepočítava podľa aktuálneho kurzu. Ak chce klient 3 FE a 1 admin, možnosťou je vytvoriť 3 samostatné shoptety a spravovať v ERP systéme napr. ODOO alebo vlastné ERP riešenie.
+        https://api.myshoptet.com/api/eshop?include=orderStatuses,paymentMethods,countries
+    7. Na shoptete je možné predávať na viacerých krajinách v jednom admine iba tak, že je možné iba prepnúť jazyk. Nedá sa nastaviť ani    rôzna cena, tá sa iba prepočítava podľa aktuálneho kurzu. Ak chce klient 3 FE a 1 admin, možnosťou je vytvoriť 3 samostatné shoptety a spravovať v ERP systéme napr. ODOO alebo vlastné ERP riešenie.
 
 Zadanie 5.
 
