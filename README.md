@@ -1,6 +1,29 @@
 Zadanie 1.
 
 Zadanie 2.
+    1.Postup napojenia: 
+        - najprv by som vytvoril wennhok cez napr. postman cez api: https://api.myshoptet.com/api/webhooks,
+            body: JSON.stringify({
+                data: [
+                    {
+                    event: 'order:create',
+                    url: 'https://myapplication.sk/shoptet-webhook'
+                    }
+                ]
+            })
+        - vytvoril by som endpoint "/shoptet-webhook", kde by som na zaklade event resolvol podla eventInstance, co je pri evente "order:create" cislo objednavky
+        - cez Shoptet Api by som nacital order data a poslal vytvoril riadok v google sheet 
+    2. Poslane data: 
+                - cislo obj
+                - meno
+                - email
+                - produkty
+                - celkova cena
+                - paymaent metoda
+                - shippping metoda
+                - adressa (mena, ulica, mesto......)
+                - poznamka
+    3. endpoint kod zadanie2.js
 
 Zadanie 3.
     Upraveny kod je v subore zadanie3.js

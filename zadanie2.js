@@ -69,8 +69,6 @@ app.post("/shoptet-webhook", async (req, res) => {
       DeliveryCountry:
         order.deliveryAddress?.countryCode || order.billingAddress.countryCode,
       Notes: order.notes?.eshopRemark || "",
-      TrackingNumber: order.notes?.trackingNumber || "",
-      TrackingURL: order.notes?.trackingUrl || "",
     };
 
     const sheet = await initSheet();
