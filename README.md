@@ -1,7 +1,9 @@
 Zadanie 1.
     1. V admine na Shoptete sa to dá natívne nastaviť v záložke Nastavenia -> Produkty -> Parametre a príznaky -> Príznaky,
         sa dá vztvoriť príznak kde sa nastaví počet dní koľko od vztvorenia sa má flag zobrazovať
-    2. 
+    2. script súbor zadanie1-2.js môžeme dať na ftp 
+        admin -> Vzhľad a Obsah → Editor → HTML kód -> zahlavie: 
+        <script src="https://cdn.myshoptet.com/usr/demo-partner.myshoptet.com/user/documents/scripts/zadanie1-2.js?v1.0" type="text/javascript" defer></script> alebo priamo kód vložime do script tagov
     3. Nastavime css admin -> Vzhľad a Obsah → Editor → HTML kód -> zahlavie:
         <style>
             .type-category .product .p-bottom.single-button {
